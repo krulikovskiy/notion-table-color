@@ -1,0 +1,19 @@
+.notion-color-start {
+    position: absolute;
+    z-index: 999;
+    left: -36px;
+    padding: 0px 4px;
+    top: 0;
+    border: 1px solid #000;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.notion-color-start:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.notion-table-view > .notion-selectable:not(.notion-collection-item) {
+    position: relative;
+}

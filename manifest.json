@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Notion Color Formatting",
+  "description": "Highlights data from tables in Notion",
+  "version": "1.0.0",
+  "author": "Nikita Krulikovskiy",
+  "homepage_url": "https://krulikovskiy.ru",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.notion.so/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "jquery-3.4.1.min.js",
+        "contentScript.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
